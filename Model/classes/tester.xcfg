@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="model.services.AppModuleAM">
+      <AppModuleConfig name="162AF6AD677" JDBCName="HR_CONN" DeployPlatform="LOCAL" jbo.project="model.Model" IsLazyLoadingTrue="true" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" BC4JConfigName="AppModuleAMLocal" ApplicationName="model.services.AppModuleAM" DBconnection="java:comp/env/jdbc/HR_CONNDS">
+         <Database jbo.locking.mode="optimistic" jbo.TypeMapEntries="OracleApps" jbo.SQLBuilder="Oracle"/>
+         <Security AppModuleJndiName="model.services.AppModuleAM"/>
+         <Tester FullProxyInterfaceName="model.services.common.AppModuleAM"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/HR_CONNDS" ns0:_testers_credentials_needed="false" ns0:ns0="http://xmlns.oracle.com/bc4j/configuration" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="162C9353CD2" IsLazyLoadingTrue="true" DBconnection="java:comp/env/jdbc/HR_CONNDS" ApplicationName="model.services.AppModuleAM" jbo.project="model.Model" BC4JConfigName="AppModuleAMLocal" java.naming.factory.initial="oracle.jbo.common.JboInitialContextFactory" DeployPlatform="LOCAL" JDBCName="HR_CONN">
+         <Database jbo.SQLBuilder="Oracle" jbo.TypeMapEntries="OracleApps" jbo.locking.mode="optimistic"/>
+         <Security AppModuleJndiName="model.services.AppModuleAM"/>
+         <Tester FullProxyInterfaceName="model.services.common.AppModuleAM"/>
+         <Custom ns0:LastUsedConfiguration="AppModuleAMLocal" ns0:ns0="http://xmlns.oracle.com/bc4j/configuration" ns0:JDBCDataSource="java:comp/env/jdbc/HR_CONNDS" ns0:_testers_credentials_needed="false" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

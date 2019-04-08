@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="Home.jspx" id="d1">
+            <af:form id="f1">
+                <af:button text="Dept Employees" id="b1" action="showDetail"/>
+                <af:panelSpringboard id="ps1" displayMode="grid">
+                    <af:showDetailItem text="Departments" id="sdi1" icon="/36-toolbox.png">
+                        <af:region value="#{bindings.departmentstaskflow1.regionModel}" id="r1"/>
+                    </af:showDetailItem>
+                    <af:showDetailItem text="Employees" id="sdi2" icon="/19-gear.png">
+                        <af:region value="#{bindings.Employeestaskflow1.regionModel}" id="r2"/>
+                    </af:showDetailItem>
+                </af:panelSpringboard>
+            </af:form>
+        </af:document>
+    </f:view>
+</jsp:root>
